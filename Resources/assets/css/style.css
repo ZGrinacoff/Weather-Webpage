@@ -1,0 +1,69 @@
+body {
+    background-color: #fffdd0;
+}
+
+.table-responsive {
+    overflow-x:auto;
+    overflow-y:auto;
+    max-height:600px;
+    max-width: auto;
+}
+
+/* tbody{
+    overflow-y: scroll;      
+    height: 800px;
+    width: 100%;
+    position: absolute;
+} */
+
+#navie {
+    background-color: #118a2b;
+}
+
+footer{
+    background-color: #118a2b; 
+    border-top-style: solid; 
+    border-top-width: 5px; 
+    border-top-color: #7e7e7e85;
+    color: white;
+    min-height: 40px;
+    font-size: 18px; 
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+
+#gitlink {
+    color: white;
+}
+
+.vizImg:hover {
+    opacity: 0.6;
+  }
+
+.vizImg.active {
+    border: 3px solid #7e7e7e85;
+    padding: 2px;
+}
+
+#copyright {
+    color: white;
+}
+
+@media screen and (max-width: 760px) {
+    #navie {
+        background-color: #7e7e7e85;
+    }
+
+    footer {
+        position: relative;
+        background-color: #7e7e7e85; 
+        border-top-color: #118a2b85;
+        /* color: black; */
+    }
+
+}
