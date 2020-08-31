@@ -11,13 +11,12 @@
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous"
         >
-        <link rel="stylesheet" href="Resources/assets/css/style.css">
+        <link rel="stylesheet" href="../Resources/assets/css/style.css">
         <title>Weather : )</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark" id="navie" >
-            
-            <a class="navbar-brand font-weight-bold" href="index.html">Latitude</a>
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navie">
+            <a class="navbar-brand font-weight-bold" href="../index.html">Latitude</a>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -33,7 +32,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a
-                            class="nav-link dropdown-toggle"
+                            class="nav-link dropdown-toggle active"
                             href="#"
                             id="navbarDropdown"
                             role="button"
@@ -44,17 +43,17 @@
                             Plots
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item " href="Assets/temp.html ">Maximum Temperature</a>
-                            <a class="dropdown-item " href="Assets/humidity.html ">Humidity</a>
-                            <a class="dropdown-item " href="Assets/cloudiness.html ">Cloudiness</a>
-                            <a class="dropdown-item " href="Assets/wind.html ">Wind Speed</a>
+                            <a class="dropdown-item" href="temp.html ">Maximum Temperature</a>
+                            <a class="dropdown-item " href="humidity.html">Humidity</a>
+                            <a class="dropdown-item " href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item " href="wind.html ">Wind Speed</a>
                         </div>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="Assets/comparison.html ">Comparison</a>
+                        <a class="nav-link " href="comparison.html ">Comparison</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="Assets/data.html ">Data</a>
+                        <a class="nav-link " href="data.html ">Data</a>
                     </li>
                 </ul>
             </div>
@@ -65,30 +64,26 @@
                     <div class="container-fluid rounded my-4 py-2" style="background-color: #118a2b50; ">
                         <br>
                         <blockquote class=" blockquote text-left ">
-                            <h2>Summary: Latitude vs. X...</h2>
+                            <h2>Humidity</h2>
                         </blockquote>
                         <hr>
-                        <div class="container pb-5">
-                            <img
-                                src="Resources/assets/images/Fig1.png "
-                                class="rounded mx-auto d-block float-left"
-                                style="width: 30%; height: 30%;"
-                                alt="Max Temperature Plot "
-                            >
+                        <div class="row">
+                            <div class="container">
+                                <img
+                                    src="../Resources/assets/images/Fig2.png "
+                                    class="rounded mx-auto d-block float-center"
+                                    style="width: 90%; height: 90%;"
+                                    alt="Humidity Plot"
+                                >
+                            </div>
                         </div>
                         <br>
                         <blockquote class="blockquote text-left ">
                             <p class="lead ">
-                                The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this, we first assembled a dataset on over 500 cities from the OpenWeatherMap API.
+                                Humidity does not show a strong correlation to latitude. The visualization shows a great variety of humidity percentages at different latitudes. Therefore, we cannot determine whether there is a conclusive pattern between humidity and latitude.
                             </p>
                         </blockquote>
                         <br>
-                        <blockquote class="blockquote text-left ">
-                            <p class="lead ">
-                                After assembling the dataset, we used Pandas and Matplotlib to compare various aspects of the weather. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part
-                            of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                            </p>
-                        </blockquote>
                     </div>
                 </div>
                 <div class="col-md-5 ">
@@ -104,7 +99,7 @@
                                     <div class="row justify-content-md-center">
                                         <div class="col-md-6 mb-4">
                                             <h6 class="text-center">Latitude vs. Max. Temp</h6>
-                                            <a href="Assets/temp.html ">
+                                            <a href="temp.html ">
                                                 <img
                                                     src="../Resources/assets/images/Fig1.png "
                                                     class="rounded mx-auto d-block vizImg"
@@ -115,10 +110,10 @@
                                         </div>
                                         <div class="col-md-6 mb-4">
                                             <h6 class="text-center">Latitude vs. Humidity</h6>
-                                            <a href="Assets/humidity.html ">
+                                            <a href="humidity.html ">
                                                 <img
                                                     src="../Resources/assets/images/Fig2.png "
-                                                    class="rounded mx-auto d-block vizImg"
+                                                    class="rounded mx-auto d-block vizImg active"
                                                     style="width: 90%; height: 90% "
                                                     alt="Responsive image "
                                                 >
@@ -129,7 +124,7 @@
                                     <div class="row justify-content-md-center">
                                         <div class="col-md-6 mb-4">
                                             <h6 class="text-center">Latitude vs. Cloudiness</h6>
-                                            <a href="Assets/cloudiness.html ">
+                                            <a href="cloudiness.html ">
                                                 <img
                                                     src="../Resources/assets/images/Fig3.png "
                                                     class="rounded mx-auto d-block vizImg"
@@ -140,7 +135,7 @@
                                         </div>
                                         <div class="col-md-6 mb-4">
                                             <h6 class="text-center">Latitude vs. Wind Speed</h6>
-                                            <a href="Assets/wind.html ">
+                                            <a href="wind.html ">
                                                 <img
                                                     src="../Resources/assets/images/Fig4.png "
                                                     class="rounded mx-auto d-block vizImg"
@@ -167,8 +162,8 @@
         </footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>

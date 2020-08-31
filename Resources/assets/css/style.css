@@ -1,11 +1,12 @@
 body {
     background-color: #fffdd0;
+    margin-bottom:60px;
 }
 
 .table-responsive {
     overflow-x:auto;
     overflow-y:auto;
-    max-height:600px;
+    max-height:950px;
     max-width: auto;
 }
 
@@ -21,6 +22,7 @@ body {
 }
 
 footer{
+    display: block;
     background-color: #118a2b; 
     border-top-style: solid; 
     border-top-width: 5px; 
@@ -33,8 +35,10 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 60px;
     padding-top: 5px;
     padding-bottom: 5px;
+    line-height: 40px;
     }
 
 #gitlink {
@@ -56,14 +60,12 @@ footer{
 
 @media screen and (max-width: 760px) {
     #navie {
-        background-color: #7e7e7e85;
+        background-color: #47584b85;
     }
 
     footer {
-        position: relative;
-        background-color: #7e7e7e85; 
+        background-color: #47584b85; 
         border-top-color: #118a2b85;
-        /* color: black; */
     }
 
 }
